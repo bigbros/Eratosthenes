@@ -6,6 +6,7 @@ import android.view.*;
 import android.widget.*;
 import android.view.View.OnClickListener;
 import java.util.LinkedList;
+import java.util.Calendar;
 
 public class MainActivity extends Activity implements OnClickListener
 {
@@ -38,17 +39,24 @@ public class MainActivity extends Activity implements OnClickListener
 			@Override
 			public void run() {
 				Eratosthenes era = new Eratosthenes();
+				long begin = 0;
+				long end = 0;
+				begin = Calendar.getInstance().getTimeInMillis();
 				LinkedList<Integer> result = era.findPrimes(min, max);
-				String text = "";
+				end = Calendar.getInstance().getTimeInMillis();
+				final StringBuilder msg = new StringBuilder();
 				for(Integer num: result) {
-					text = text + num + " ";
+					msg.append(num);
+					msg.append(' ');
 				}
-				final String msg = text;
+				msg.append("\ncount: " + result.size());
+				msg.append("\ntime: " + (end - begin) + "[ms]");
+				
 				runOnUiThread(new Runnable() {
 					@Override
 					public void run() {
 						TextView tv = (TextView)findViewById(R.id.primeView);
-						tv.setText(msg);
+						tv.setText(msg.toString());
 					}
 				});
 			}
