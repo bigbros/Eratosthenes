@@ -11,7 +11,7 @@ public class Eratosthenes {
 	}
 	
 	private boolean isPrime(int x) {
-		if(x == 1) return false;
+		if(x < 2) return false;
 		for(Integer num : mPrimes) {
 			if(num * num > x) break;
 			if((x % num) == 0)return false; 
