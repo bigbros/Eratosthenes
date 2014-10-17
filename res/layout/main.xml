@@ -21,7 +21,8 @@
 			android:inputType="number"
 			android:ems="10"
 			android:layout_width="wrap_content"
-			android:id="@+id/begin"/>
+			android:id="@+id/begin"
+			android:text="100000000"/>
 
 	</LinearLayout>
 
@@ -41,7 +42,8 @@
 			android:inputType="number"
 			android:ems="10"
 			android:layout_width="wrap_content"
-			android:id="@+id/end"/>
+			android:id="@+id/end"
+			android:text="100020000"/>
 
 	</LinearLayout>
 
@@ -64,5 +66,4 @@
 	</ScrollView>
 
 </LinearLayout>
-
 
