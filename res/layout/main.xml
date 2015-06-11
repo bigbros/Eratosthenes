@@ -8,13 +8,15 @@
 	<LinearLayout
 		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
-		android:orientation="horizontal">
+		android:orientation="horizontal"
+		android:gravity="center_vertical">
 
 		<TextView
 			android:layout_height="wrap_content"
-			android:text="begin"
+			android:text="@string/begin"
 			android:textAppearance="?android:attr/textAppearanceMedium"
-			android:layout_width="50dp"/>
+			android:layout_width="50dp"
+			android:gravity="center_vertical"/>
 
 		<EditText
 			android:layout_height="wrap_content"
@@ -29,11 +31,12 @@
 	<LinearLayout
 		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
-		android:orientation="horizontal">
+		android:orientation="horizontal"
+		android:gravity="center_vertical">
 
 		<TextView
 			android:layout_height="wrap_content"
-			android:text="end"
+			android:text="@string/end"
 			android:textAppearance="?android:attr/textAppearanceMedium"
 			android:layout_width="50dp"/>
 
@@ -49,7 +52,7 @@
 
 	<Button
 		android:layout_height="wrap_content"
-		android:text="find prime numbers from between begin to end."
+		android:text="@string/prime"
 		android:layout_width="match_parent"
 		android:id="@+id/findPrime"/>
 

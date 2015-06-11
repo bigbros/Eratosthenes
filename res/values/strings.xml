@@ -2,6 +2,12 @@
 <resources>
 
     <string name="hello">Hello World, MainActivity!</string>
-    <string name="app_name">Eratosthenes</string>
+    <string name="app_name">エラトステネスの篩(ふるい)</string>
 
+	<string name="prime">指定範囲の素数を探します。</string>
+
+	<string name="begin">開始</string>
+	<string name="end">終了</string>
+	
 </resources>
+
